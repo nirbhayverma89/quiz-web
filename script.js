@@ -19,6 +19,9 @@ function loadUploadedQuiz() {
     timeLeft = timeMinutes * 60; // Convert minutes to seconds
 
     const file = fileInput.files[0];
+    const fileName = file.name.replace(".json", ""); // Remove file extension
+    document.getElementById('quiz-title').textContent = `${fileName} Quiz`; // Set quiz title dynamically
+
     const reader = new FileReader();
 
     reader.onload = function(event) {
@@ -89,9 +92,7 @@ function updateTimer() {
 
 function submitQuiz() {
     clearInterval(timerInterval);
-    // Disable the submit button to prevent multiple submissions
     document.getElementById('submit-btn').disabled = true;
-    // Hide the quiz container
     document.getElementById('quiz-container').classList.add('hidden');
     showResults();
 }
@@ -122,5 +123,5 @@ function showResults() {
     resultsDiv.innerHTML = resultsHTML;
 }
 
-// Also bind the submit button if the user clicks it before time runs out
+// Bind submit button event
 document.getElementById('submit-btn').addEventListener('click', submitQuiz);
