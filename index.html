@@ -7,14 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="container">
         <!-- Upload Section -->
         <div id="upload-section">
             <h2>Upload Quiz JSON & Set Time</h2>
-            <input type="file" id="json-upload" accept=".json">
-            <input type="number" id="time-limit" placeholder="Enter time in minutes">
+            
+            <!-- File Upload -->
+            <div class="upload-field">
+                <label for="json-upload">Choose Quiz JSON File:</label>
+                <input type="file" id="json-upload" accept=".json">
+            </div>
+
+            <!-- Time Input -->
+            <div class="upload-field">
+                <label for="time-limit">Enter time in minutes:</label>
+                <input type="number" id="time-limit" placeholder="e.g., 30">
+            </div>
+
+            <!-- Start Quiz Button -->
             <button onclick="loadUploadedQuiz()">Start Quiz</button>
+
+            <!-- Example JSON Format -->
+            <div class="example-json">
+                <h3>Example JSON Format:</h3>
+                <pre>
+{
+  "questions": [
+    {
+      "question": "Sample question 1?",
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "correct_index": 1,  <!-- Index of correct option (0-based) -->
+      "explanation": "Explanation for correct answer."
+    },
+    {
+      "question": "Sample question 2?",
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "correct_index": 2,
+      "explanation": "Explanation for correct answer."
+    }
+  ]
+}
+                </pre>
+                <p><strong>Note:</strong> Save your quiz data in this format and upload the JSON file.</p>
+            </div>
         </div>
 
         <!-- Quiz Section (Hidden Initially) -->
@@ -24,18 +59,19 @@
                 <div id="timer">Time Left: 00:00</div>
             </header>
 
+            <!-- Quiz Questions Container -->
             <div id="quiz-container"></div>
 
+            <!-- Submit Button -->
             <div class="controls">
                 <button id="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
             </div>
 
+            <!-- Results Section -->
             <div id="results" class="hidden"></div>
         </div>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
-
