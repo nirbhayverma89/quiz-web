@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantitative Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Upload Section -->
+        <div id="upload-section">
+            <h2>Upload Quiz JSON & Set Time</h2>
+            <input type="file" id="json-upload" accept=".json">
+            <input type="number" id="time-limit" placeholder="Enter time in minutes">
+            <button onclick="loadUploadedQuiz()">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Section (Hidden Initially) -->
+        <div id="quiz-section" class="hidden">
+            <header>
+                <h1>Quantitative Quiz</h1>
+                <div id="timer">Time Left: 00:00</div>
+            </header>
+
+            <div id="quiz-container"></div>
+
+            <div class="controls">
+                <button id="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+            </div>
+
+            <div id="results" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

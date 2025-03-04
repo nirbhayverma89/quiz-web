@@ -1,0 +1,101 @@
+{
+    "time_limit": 1800,
+    "questions": [
+      {
+        "question": "Of the following, which is the closest approximation of (50.2*0.49)/199.8?",
+        "options": ["0.100", "0.115", "0.125", "0.150"],
+        "correct_index": 2,
+        "explanation": "Approximating (50.2×0.49)/199.8 as 50×0.5/200 gives 25/200 = 0.125."
+      },
+      {
+        "question": "How many prime numbers between 1 and 100 are factors of 7150?",
+        "options": ["2", "3", "4", "5"],
+        "correct_index": 2,
+        "explanation": "7150 = 2 × 5² × 11 × 13, so there are 4 distinct prime numbers."
+      },
+      {
+        "question": "Among a group of 2500 people, 35% invest in municipal bonds, 18% invest in oil stocks, and 7% invest in both. What is the probability that a randomly selected person invests in municipal bonds but not in oil stocks?",
+        "options": ["18%", "25%", "28%", "35%"],
+        "correct_index": 2,
+        "explanation": "Only municipal bonds = 35% - 7% = 28%."
+      },
+      {
+        "question": "A swim club has 60 members, of which 30% passed a lifesaving test. Among those who didn’t, 12 took a preparatory course and 30 did not. How many total members are in the club?",
+        "options": ["50", "55", "60", "65"],
+        "correct_index": 2,
+        "explanation": "Since 42 members failed (12 + 30) and that represents 70% of total members, total = 42×100/70 = 60."
+      },
+      {
+        "question": "A necklace is made with beads in the repeating pattern: Red, Green, White, Blue, Yellow. If it starts with Red and ends with White, what could be the total number of beads?",
+        "options": ["63", "65", "68", "70"],
+        "correct_index": 2,
+        "explanation": "White appears at positions 3, 8, 13, …; solving the arithmetic progression yields 68."
+      },
+      {
+        "question": "A dog takes 4 leaps for every 5 leaps of a hare, but 3 leaps of the dog equal 4 leaps of the hare. Compare their speeds.",
+        "options": ["16:15", "15:14", "17:16", "12:11"],
+        "correct_index": 0,
+        "explanation": "Using the given relations, the dog's speed : hare's speed = 16 : 15."
+      },
+      {
+        "question": "There are two boxes: one with 39 red balls and the other with 26 green balls. You can move balls to maximize the probability of picking a red ball. What is the maximum probability?",
+        "options": ["0.75", "0.8", "0.85", "0.9"],
+        "correct_index": 1,
+        "explanation": "Optimal strategy: Put 1 red ball in one box and the rest in the other, giving a probability of 0.8."
+      },
+      {
+        "question": "In how many ways can 3 postcards be posted in 5 postboxes?",
+        "options": ["60", "100", "125", "150"],
+        "correct_index": 2,
+        "explanation": "Each postcard has 5 choices, so total ways = 5³ = 125."
+      },
+      {
+        "question": "If the price of 33 kg of apples is Rs.11.67 and 36 kg is Rs.12.48, what is the cost of the first 10 kg?",
+        "options": ["Rs.3.20", "Rs.3.50", "Rs.3.62", "Rs.3.75"],
+        "correct_index": 2,
+        "explanation": "Setting up equations and solving gives Rs.3.62 for the first 10 kg."
+      },
+      {
+        "question": "Letters in the word ABUSER are permuted in all possible ways and arranged in alphabetical order. What is the 49th word?",
+        "options": ["ARBSEU", "ARBESU", "ARBSUE", "ARBEUS"],
+        "correct_index": 1,
+        "explanation": "Based on permutation order, the 49th word is ARBESU."
+      },
+      {
+        "question": "A is twice as efficient as B. A and B together complete a work in 7 days. In how many days can A alone complete the work?",
+        "options": ["10", "10.5", "11", "12"],
+        "correct_index": 1,
+        "explanation": "Since A's efficiency is twice that of B, A alone completes the work in 10.5 days."
+      },
+      {
+        "question": "In an 8×8 chessboard, what is the total number of squares?",
+        "options": ["200", "202", "204", "206"],
+        "correct_index": 2,
+        "explanation": "Using the formula 1²+2²+...+8² = 204, the total squares are 204."
+      },
+      {
+        "question": "If X - Y - Z is even and Y - W - Z is odd, and X is even, which of the following must be true?",
+        "options": ["Y is odd", "Y-Z is odd", "W is odd", "Z is odd"],
+        "correct_index": 2,
+        "explanation": "Given the conditions, W must be odd."
+      },
+      {
+        "question": "What is the remainder when 1! + 2! + 3! + ... + 50! is divided by 5!?",
+        "options": ["10", "20", "33", "40"],
+        "correct_index": 2,
+        "explanation": "Since 5! and above are divisible by 5!, only 1!+2!+3!+4! contribute: 1+2+6+24 = 33."
+      },
+      {
+        "question": "If there are 6 periods in a school day, in how many ways can 5 subjects be arranged such that each subject is allotted at least one period?",
+        "options": ["3000", "3600", "4000", "4500"],
+        "correct_index": 1,
+        "explanation": "Using combinatorial arrangements, the answer is 3600."
+      },
+      {
+        "question": "An article consists of two parts, X and Y. In manufacturing, 9% of X and 5% of Y may be defective. What is the probability that the assembled product is not defective?",
+        "options": ["0.6485", "0.6565", "0.8645", "None"],
+        "correct_index": 2,
+        "explanation": "Probability = (1 - 0.09) × (1 - 0.05) = 0.91 × 0.95 ≈ 0.8645."
+      }
+    ]
+  }
