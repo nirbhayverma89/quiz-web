@@ -31,15 +31,28 @@ header {
     border: 2px dashed #3498db;
     border-radius: 10px;
     background: #ecf0f1;
+    margin-bottom: 2rem;
 }
 
-#upload-section input {
+.upload-field {
+    margin: 1rem 0;
+}
+
+.upload-field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.upload-field input {
     display: block;
     width: 100%;
     padding: 0.8rem;
-    margin: 0.8rem 0;
+    margin: 0.5rem 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 #upload-section button {
@@ -50,22 +63,63 @@ header {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1rem;
+    margin-top: 1rem;
 }
 
 #upload-section button:hover {
     background: #2980b9;
 }
 
-/* Timer */
-#timer {
-    font-size: 1.2rem;
-    color: #e74c3c;
-    margin: 1rem 0;
+/* Example JSON Section */
+.example-json {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.example-json h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.example-json pre {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.example-json p {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #666;
 }
 
 /* Quiz Section */
 .hidden {
     display: none;
+}
+
+#quiz-section {
+    margin-top: 2rem;
+}
+
+#quiz-title {
+    color: #2c3e50;
+}
+
+#timer {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    margin: 1rem 0;
+    font-weight: bold;
 }
 
 .question {
@@ -76,6 +130,11 @@ header {
     background: #f8f9fa;
 }
 
+.question h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
 .options label {
     display: block;
     margin: 0.5rem 0;
@@ -84,6 +143,11 @@ header {
     border: 1px solid #ddd;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.options label:hover {
+    background: #ecf0f1;
 }
 
 .options input[type="radio"] {
@@ -103,13 +167,14 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1rem;
+    transition: background 0.3s ease;
 }
 
 button:hover {
     background: #2980b9;
 }
 
-/* Results */
+/* Results Section */
 #results {
     margin-top: 2rem;
 }
@@ -128,4 +193,19 @@ button:hover {
 .incorrect {
     background: #f8d7da;
     border: 1px solid #f5c6cb;
+}
+
+.result-item h4 {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.result-item p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.explanation {
+    font-style: italic;
+    color: #666;
 }
