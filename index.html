@@ -10,22 +10,38 @@
     <div class="container">
         <!-- Upload Section -->
         <div id="upload-section">
-            <h2>Upload Quiz JSON & Set Time</h2>
+            <h2>Quiz Selection</h2>
             
-            <!-- File Upload -->
-            <div class="upload-field">
-                <label for="json-upload">Choose Quiz JSON File:</label>
-                <input type="file" id="json-upload" accept=".json">
+            <!-- Predefined Quizzes -->
+            <div class="predefined-quizzes">
+                <h3>Select a Predefined Quiz:</h3>
+                <div class="quiz-options">
+                    <button onclick="loadPredefinedQuiz('history')">History Quiz (5 mins)</button>
+                    <button onclick="loadPredefinedQuiz('science')">Science Quiz (5 mins)</button>
+                    <button onclick="loadPredefinedQuiz('math')">Math Quiz (5 mins)</button>
+                </div>
             </div>
 
-            <!-- Time Input -->
-            <div class="upload-field">
-                <label for="time-limit">Enter time in minutes:</label>
-                <input type="number" id="time-limit" placeholder="e.g., 30">
-            </div>
+            <div class="divider">OR</div>
 
-            <!-- Start Quiz Button -->
-            <button onclick="loadUploadedQuiz()">Start Quiz</button>
+            <!-- Custom Quiz Section -->
+            <div class="custom-quiz">
+                <h3>Create Custom Quiz:</h3>
+                <!-- File Upload -->
+                <div class="upload-field">
+                    <label for="json-upload">Choose Quiz JSON File:</label>
+                    <input type="file" id="json-upload" accept=".json">
+                </div>
+
+                <!-- Time Input -->
+                <div class="upload-field">
+                    <label for="time-limit">Enter time in minutes:</label>
+                    <input type="number" id="time-limit" placeholder="e.g., 30">
+                </div>
+
+                <!-- Start Quiz Button -->
+                <button onclick="loadUploadedQuiz()">Start Custom Quiz</button>
+            </div>
 
             <!-- Example JSON Format -->
             <div class="example-json">
@@ -56,7 +72,7 @@
         <div id="quiz-section" class="hidden">
             <header>
                 <h1 id="quiz-title">Quiz</h1> <!-- Dynamic Quiz Title -->
-                <div id="timer">Time Left: 00:00</div>
+                <div id="timer">Time Left: 05:00</div>
             </header>
 
             <!-- Quiz Questions Container -->
